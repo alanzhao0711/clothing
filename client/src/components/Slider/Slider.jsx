@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 import "./Slider.scss";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,25 +15,16 @@ const Slider = () => {
   };
 
   return (
-    <div className="slider">
-      <div
-        className="container"
-        style={{
-          transform: `translateX(-${currentSlide * 100}vw)`,
-        }}
-      >
-        <img src="/img/h1.png" alt="" />
-        <img src="/img/h2.png" alt="" />
-        <img src="/img/home3.jpg" alt="" />
-      </div>
-      <div className="icons">
-        <div className="icon" onClick={prevSlide}>
-          <WestOutlinedIcon />
-        </div>
-        <div className="icon" onClick={nextSlide}>
-          <EastOutlinedIcon />
-        </div>
-      </div>
+    <div className="container">
+      <Link to="/products/2">
+        <img src="./img/h1.png" alt="" />
+      </Link>
+      <Link to="/products/3">
+        <img src="./img/h2.png" alt="" />
+      </Link>
+      <Link to="/products/1">
+        <img src="./img/h3.png" alt="" />
+      </Link>
     </div>
   );
 };

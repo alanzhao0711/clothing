@@ -39,11 +39,6 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="right">
-          <div className="item">
-            <Link className="link" to="/">
-              Homepage
-            </Link>
-          </div>
           <div className="icons" style={{ paddingTop: "8px" }}>
             <div className="cartIcon" onClick={() => setOpen(!open)}>
               <ShoppingCartOutlinedIcon />

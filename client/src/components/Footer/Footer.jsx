@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="top">
-        <div className="item">
+        <div className="item1">
           <h1>Categories</h1>
           <span>
             <Link className="link" to="/products/1">
@@ -38,7 +38,7 @@ const Footer = () => {
             </Link>
           </span>
         </div>
-        <div className="item">
+        <div className="item2">
           <h1>About</h1>
           <span>
             Alan.S is a lifestyle retailer dedicated to inspiring customers

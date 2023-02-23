@@ -1,26 +1,55 @@
 .featuredProducts {
-  margin: 100px 200px;
+  margin: 70px 50px;
+  margin-bottom: 70px;
+  // .top {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   margin-bottom: 50px;
 
-  .top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
+  //   h1 {
+  //     flex: 2;
+  //     text-transform: capitalize;
+  //   }
 
-    h1 {
-      flex: 2;
-      text-transform: capitalize;
-    }
+  //   p {
+  //     flex: 3;
+  //     color: gray;
+  //   }
+  // }
 
-    p{
-      flex:3;
-      color:gray
-    }
+  .bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+  }
+}
+
+.top {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 70px;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
 
-  .bottom{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+  p {
+    font-size: 0.7rem;
   }
 }
