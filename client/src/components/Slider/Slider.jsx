@@ -1,19 +1,8 @@
 import React, { useState } from "react";
-import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
-import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
 import "./Slider.scss";
 import { Link } from "react-router-dom";
 
 const Slider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? 2 : (prev) => prev - 1);
-  };
-  const nextSlide = () => {
-    setCurrentSlide(currentSlide === 2 ? 0 : (prev) => prev + 1);
-  };
-
   return (
     <div className="container">
       <Link to="/products/2">
